@@ -48,7 +48,7 @@ class Metadata(object):
             self.exiftoolPath = None
         if not os.path.isfile(filename):
             raise IOError("Input path is not a file")
-        with exiftool.ExifToolHelper() as exift:
+        with exiftool.ExifTool(self.exiftoolPath) as exift:
             self.exif = exift.get_metadata(filename)
 
     def get_all(self):

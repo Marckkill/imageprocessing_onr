@@ -21,8 +21,8 @@ dependencies:
   - pip
   - pytest-xdist
   - pip:
-    - pyzbar
-    - mapboxgl
-    - pyexiftool
-    - jenkspy
-    - rawpy
+      - pyzbar
+      - mapboxgl
+      - pyexiftool==0.4.13
+      - jenkspy
+      - rawpy
